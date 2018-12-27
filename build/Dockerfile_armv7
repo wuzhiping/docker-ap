@@ -9,9 +9,6 @@ MAINTAINER fgg89
 # Use baseimage-docker's init system.
 CMD ["/bin/bash"]
 
-ENV http_proxy http://10.17.255.19:8080
-ENV https_proxy http://10.17.255.19:8080
-
 # Update the repos
 RUN apt-get update && apt-get upgrade -y
 
@@ -23,5 +20,3 @@ RUN chmod u+x /usr/bin/start_ap
 # Clean up APT when done.
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ENV http_proxy ""
-ENV https_proxy ""
