@@ -1,0 +1,17 @@
+  cd docker-ap/
+  .git/config
+  git push origin master
+
+  vi docker_ap
+  git status
+  git add docker_ap
+  git commit -am "transform"
+  git config --global user.email "wuzhiping@qq.com"
+  git config --global user.name "shawoo"
+  git commit -am "transform"
+  git push origin master
+
+  docker images
+
+  ./docker_ap start eth0
+
