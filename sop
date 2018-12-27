@@ -13,5 +13,5 @@
 
   docker images
 
-  ./docker_ap start eth0
+  ./docker_ap start wlan0
 
