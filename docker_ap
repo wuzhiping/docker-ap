@@ -48,10 +48,10 @@ popd > /dev/null
 
 if [ "$ARCH" == "armv7l" ]
 then
-    DOCKER_IMAGE="fgg89/armhf-docker-ap"
+    DOCKER_IMAGE="shawoo/armhf-docker-ap"
 elif [ "$ARCH" == "x86_64" ]
 then
-    DOCKER_IMAGE="fgg89/docker-ap"
+    DOCKER_IMAGE="shawoo/docker-ap"
 else
     echo "Currently supported architectures are x86_64 and armv7. Exiting..."
     exit 1
